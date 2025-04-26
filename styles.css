@@ -43,7 +43,9 @@ header{
     align-items: center;
     padding: 5px 50px 5px 20px;
     z-index: 1000;
-    background: var(--primary-transparent);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* for Safari */
+    background-color: rgba(27, 27, 27, 0.2); /* optional for glass effect */
     
 }
 
@@ -541,8 +543,8 @@ div.testimonials {
   }
 
   .avatar {
-    width: 60px;
-    height: 60px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 1rem;

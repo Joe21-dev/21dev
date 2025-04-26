@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="skills.css">
+</head>
+<body>
+    <header>
+        <!-- Page Logo -->
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="logo" width="100px"></a>
+        </div>
+
+    <!-- navbar icon -->
+    <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar"> 
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9"><path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z"/></svg>
+    </button>
+    <nav id="navbar">
+        <ul>
+            <!-- close icon -->
+            <li><button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"/></svg>
+            </button></li>
+            <!-- nav-links -->
+            <li><a href="index.html" class="active-link" >Home</a></li>
+            <li><a href="about.html" >About</a></li>
+            <li><a href="projects.html" >Projects</a></li>
+            <li><a href="contact.html" >Contact</a></li>
+            <li><a href="cv/resume.pdf" class="accent-link">Download CV</a></li>
+        </ul>
+    </nav>
+
+    </header>
+
+    <!-- main section -->
+    <main>
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="hero-text">
+                <h1>Hello, I'm <span class="highlight">JSmith</span></h1>
+                <h2>Web Developer</h2>
+                <p>I design and build beautiful, responsive websites. Passionate about Backend development,UI/UX and turning ideas into digital reality.</p>
+                <div class="social-icons">
+                    <a href="" arial-label="Email">
+                        <img src="images/linkedin.png" alt="linkedin" width="30px">
+                    </a>
+                    <a href="https://github.com/Joe21-dev" arial-label="Email">
+                        <img src="images/github.png" alt="linkedin" width="30px">
+                    </a>
+                    <a href="#" arial-label="Email" onclick="openWhatsApp()">
+                        <img src="images/whatsapp.png" alt="linkedin" width="30px">
+                    </a>
+                </div>
+                <a href="#" class="contact-btn" onclick="makeCall()">
+                    <img src="images/touch.png" alt="contact" width="80px">
+                    Contact Me
+                </a>
+            </div>
+            <div class="hero-image">
+                <img src="images/laptop.webp" alt="laptop">
+            </div>
+        </div>
+
+        <!-- skills section -->
+        <div class="skills-section" id="skills">
+            <div class="skills-container">
+            <h2 class="section-title">My SkillSet</h2>
+    
+              <!-- Technical Skills Block with Tabs -->
+              <div class="skills-block technical-skills reveal">
+                <div class="tab-buttons">
+                  <button class="tab active" data-tab="frontend">Frontend</button>
+                  <button class="tab" data-tab="backend">Backend</button>
+                  <button class="tab" data-tab="design">Design</button>
+                </div>
+                
+                <div class="tab-content">
+                  <div class="tab-panel active" id="frontend">
+                    <div class="skill-bar">
+                      <span><img src="images/html.png" alt="" width="30px">HTML <span>90%</span></span>
+                      <div class="bar"><div class="progress" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                      <span><img src="images/css.png" alt="" width="30px">CSS  <span>85%</span></span>
+                      <div class="bar"><div class="progress" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                      <span><img src="images/js.png" alt="" width="30px">JavaScript  <span>80%</span></span>
+                      <div class="bar"><div class="progress" style="width: 80%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                      <span><img src="images/react.png" alt="" width="30px">React  <span>60%</span></span>
+                      <div class="bar"><div class="progress" style="width: 75%"></div></div>
+                    </div>
+                  </div>
+          
+                  <div class="tab-panel" id="backend">
+                    <div class="skill-bar">
+                      <span><img src="images/nodejs.png" alt="" width="30px">Node.js  <span>70%</span></span>
+                      <div class="bar"><div class="progress" style="width: 70%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                      <span><img src="images/django.png" alt="" width="30px">Django  <span>80%</span></span>
+                      <div class="bar"><div class="progress" style="width: 80%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                      <span><img src="images/postgre.png" alt="" width="30px">Postgre SQL<span>60%</span></span>
+                      <div class="bar"><div class="progress" style="width: 60%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                      <span><img src="images/mongodb.png" alt="" width="30px">MongoDB<span>50%</span></span>
+                      <div class="bar"><div class="progress" style="width: 50%"></div></div>
+                    </div>
+                  </div>
+          
+                  <div class="tab-panel" id="design">
+                    <div class="skill-bar">
+                      <span><img src="images/figma.png" alt="" width="30px">Figma  <span>60%</span></span>
+                      <div class="bar"><div class="progress" style="width: 60%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                      <span><img src="images/illustrator.png" alt="" width="30px">Adobe Illustrator  <span>70%</span></span>
+                      <div class="bar"><div class="progress" style="width: 70%"></div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+        </div>
+    
+    </main>
+    <div class="projects" id="projects">
+      <div class="projects-container">
+          <h2>My Projects</h2>
+          <div class="project-cards">
+              <div class="project-card">
+                  <img src="images/newspaper.jpg" alt="Project 1">
+                  <div class="project-info">
+                      <h3>OnTheDailies</h3>
+                      <p>A simple newspaper web app built using HTML, CSS, and JavaScript.</p>
+                      <a href="#" onclick="redirectWithLoading('project1.html', 2500)" class="cta-btn">View Project</a>
+                  </div>
+              </div>
+              <div class="project-card">
+                  <img src="images/salon.jpeg" alt="Project 2">
+                  <div class="project-info">
+                      <h3>House of MaxDrip</h3>
+                      <p>A responsive beauty and fashion landing page with modern design techniques.</p>
+                      <a href="#" onclick="redirectWithLoading('project2.html', 2500)" class="cta-btn">View Project</a>
+                  </div>
+              </div>
+              <div class="project-card">
+                <img src="images/music website.jpeg" alt="Project 3">
+                <div class="project-info">
+                    <h3>Eistereo</h3>
+                    <p>Interactive music app built with JavaScript,Django and localStorage.</p>
+                    <a href="#" onclick="redirectWithLoading('project3.html', 2500)" class="cta-btn">View Project</a>
+                </div>
+              </div>
+              <div class="project-card">
+                <img src="images/blog.jpeg" alt="Project 3">
+                <div class="project-info">
+                    <h3>BlogMaster</h3>
+                    <p>Mordern simple blog app built with HTML,CSS,JavaScript and Django.</p>
+                    <a href="#" onclick="redirectWithLoading('project4.html', 2500)" class="cta-btn">View Project</a>
+                </div>
+            </div>
+        </div>
+      </div>
+     </div>
+
+     <div class="testimonials">
+      <h2>What Our Clients Say</h2>
+      <div class="carousel-wrapper">
+        <div class="carousel" id="testimonialCarousel">
+          <div class="testimonial-card">
+            <div class="avatar">
+              <img src="images/c63bb705a60ba8755279f9f368c0e311.jpg" alt="">
+            </div>
+            <p class="quote">
+              “This platform has changed the way I feel safe about my online business. Highly recommended!”
+            </p>
+            <p class="name">Alice Johnson</p>
+            <p class="role">Community Leader</p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="avatar">
+              <img src="images/c63bb705a60ba8755279f9f368c0e311.jpg" alt="">
+            </div>
+            <p class="quote">
+              “An innovative mind much needed in today’s world. Excellent design and usability.”            </p>
+            <p class="name">Mariana Adams</p>
+            <p class="role">Berkins Matt Manager</p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="avatar">
+              <img src="images/c63bb705a60ba8755279f9f368c0e311.jpg" alt="">
+            </div>
+            <p class="quote">
+              “Intuitive, fast, and beautifully crafted. It's a model of modern web design.”            </p>
+            <p class="name">Sally Gloria</p>
+            <p class="role">Fashion Entreprenuer</p>
+          </div>
+
+          <div class="nav-icons">
+            <button onclick="scrollCarousel(-1)"><</button>
+            <button onclick="scrollCarousel(1)">></button>
+
+          </div>
+        </div>
+      </div>
+     </div>
+
+     <div class="rating-section">
+      <div class="rating-container">
+        <h2>Rate My Work</h2>
+        <p class="subtext">Your feedback helps me grow — rate your experience and leave a message!</p>
+    
+        <!-- Rating Stars -->
+        <div class="stars" id="starContainer">
+          <i class="star" data-value="1">★</i>
+          <i class="star" data-value="2">★</i>
+          <i class="star" data-value="3">★</i>
+          <i class="star" data-value="4">★</i>
+          <i class="star" data-value="5">★</i>
+        </div>
+        <p class="rating-output" id="ratingValue">Select a rating</p>
+        <p class="thank-you" id="thankYouMsg" style="display: none;">Thank you for your feedback! 🙌</p>
+  
+        <!-- Feedback Form -->
+        <form id="feedbackForm">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <textarea name="message" rows="4" placeholder="Your feedback, suggestion or collaboration request..." required></textarea>
+          <label class="checkbox-label">
+            <input type="checkbox" name="collab" />
+              <p>I want to collaborate on a project
+              </p>
+          </label>
+          <button type="submit">Send Feedback</button>
+        </form>
+    
+      </div>
+    </div>
+    
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Left Section: Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </div>
+
+            <!-- Center Section: Contact Info -->
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <li>Email: support@21-dev.com</li>
+                <li>Phone: +254 721 260 656</li>
+                <li>Address: Othaya-Nairobi, Kenya</li>
+            </div>
+
+            <!-- Right Section: Social Media Icons -->
+            <div class="footer-section social-media">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#" class="social-icon"><img src="images/facebook.png" alt="facebook" width="30px"></a></li>
+                    <li><a href="#" class="social-icon"><img src="images/whatsapp.png" alt="whatsapp" width="30px"></a></li>
+                    <li><a href="#" class="social-icon"><img src="images/instagram.png" alt="instagram" width="30px"></a></li>
+                    <li><a href="#" class="social-icon"><img src="images/linkedin.png" alt="linkedin" width="30px"></a></li>
+                    <li><a href="#" class="social-icon"><img src="images/github.png" alt="github" width="30px"></a></li>
+                    <li><a href="#" class="social-icon"><img src="images/x.png" alt="x(twitter)" width="30px"></a></li>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 <strong>21-dev</strong>.All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="index.js" defer></script>
+    <script src="loader.js" defer></script>
+    <script src="skills.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Page Logo -->
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="logo" width="100px"></a>
+        </div>
+
+    <!-- navbar icon -->
+    <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar"> 
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9"><path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z"/></svg>
+    </button>
+    <nav id="navbar">
+        <ul>
+            <!-- close icon -->
+            <li><button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"/></svg>
+            </button></li>
+            <!-- nav-links -->
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="about.html" class="active-link" >About</a></li>
+            <li><a href="projects.html" >Projects</a></li>
+            <li><a href="contact.html" >Contact</a></li>
+            <li><a href="cv/resume.pdf" class="accent-link">Download CV</a></li>
+        </ul>
+    </nav>
+
+    </header>
+    
+    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+    <main class="about-section">
+    <div class="about-container">    
+    <div class="about-content">
+        <h2>About Me</h2>
+        <p>I'm a passionate web developer with a love for creating beautiful and functional websites.
+             I specialize in front-end development using technologies like HTML, CSS, JavaScript, and
+            React. I also have experience with back-end technologies such as Node.js and Django.
+        </p>
+        <p>
+            When I'm not coding, I enjoy listening to trap music, playing video games and
+            drinking coffee. I also engage in sporting activites that is KARATE and Chess.
+        </p>
+    </div>
+    
+
+    <div class="laptop-animation">
+        <div class="laptop">
+            <div class="screen">
+                <div class="screen-content">
+                    <img src="images/office.jpg" alt="Preview of Project">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Left Section: Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </div>
+
+            <!-- Center Section: Contact Info -->
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <li>Email: support@21-dev.com</li>
+                <li>Phone: +254 7456 7890</li>
+                <li>Address: Othaya, Nairobi, Kenya</li>
+            </div>
+
+            <!-- Right Section: Social Media Icons -->
+            <div class="footer-section social-media">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#" class="social-icon"><img src="images/facebook.png" alt="facebook" width="30px"></a></li>
+                    <li><a href="#" class="social-icon"><img src="images/whatsapp.png" alt="whatsapp" width="30px"></a></li>
+                    <li><a href="#" class="social-icon"><img src="images/instagram.png" alt="instagram" width="30px"></a></li>
+                    <li><a href="#" class="social-icon"><img src="images/linkedin.png" alt="linkedin" width="30px"></a></li>
+                    <li><a href="#" class="social-icon"><img src="images/github.png" alt="github" width="30px"></a></li>
+                    <li><a href="#" class="social-icon"><img src="images/x.png" alt="x(twitteer)" width="30px"></a></li>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 21-dev.All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+    <script src="index.js" defer></script>
+</body>
+</html>

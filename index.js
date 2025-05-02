@@ -18,7 +18,7 @@ function makeCall() {
 }
 /* toggle WhatsApp */
 function openWhatsApp() {
-    const phoneNumber = "+254757628775"; // Use international format, no spaces or dashes
+    const phoneNumber = "+254721280656"; // Use international format, no spaces or dashes
     window.location.href = "https://wa.me/" + phoneNumber.replace(/\D/g, '');
   }
 
